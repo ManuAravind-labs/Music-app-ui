@@ -14,6 +14,7 @@ class DashboardScreen extends StatefulWidget {
     new DrawerItem("Help/FAQ", Icons.help),
     new DrawerItem("Settings", Icons.settings)
   ];
+
   @override
   _DashboardScreenState createState() => _DashboardScreenState();
 }
@@ -98,9 +99,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
   }
 
   void refresh(String title, int index) {
-      setState(() {
+    setState(() {
       this.titleData = title;
-      print("KKKKKK  "+ index.toString());
+      print("KKKKKK  " + index.toString());
       if (index == 3) {
         appbarColor = Colors.pink;
         headerTextColor = Colors.white;

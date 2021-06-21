@@ -45,10 +45,9 @@ class _BrowserScreenState extends State<BrowserScreen> {
                   Text(
                     "Recent Searches",
                     style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xFF110554)
-                    ),
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.w600,
+                        color: Color(0xFF110554)),
                   ),
                   GestureDetector(
                       onTap: () => print('View --> '),
@@ -118,4 +117,3 @@ class _BrowserScreenState extends State<BrowserScreen> {
     );
   }
 }
- 

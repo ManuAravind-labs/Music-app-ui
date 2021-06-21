@@ -78,7 +78,7 @@ class TrendingNowWidget extends StatelessWidget {
                               ),
                               SizedBox(width: 10),
                               Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   Text("Lambergini",

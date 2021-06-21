@@ -72,24 +72,24 @@ class _RadioListScreenState extends State<RadioListScreen> {
                 //   fit: BoxFit.cover,
                 // ),
 
-                child:    ClipRRect(
-                  borderRadius: BorderRadius.circular(45.0),
-                  child: Container(
-                    child: Stack(
-                    children: <Widget>[
-                      Image(
-                        width: 90,
-                        height: 90,
-                        image: AssetImage(radioArtistList[index].image),
-                        fit: BoxFit.cover,
-                      ),
-                      Container(
-                        width: 90,
-                        height: 90,
-                        color: radioArtistList[index].color.withOpacity(0.5),
-                      )
-                    ],
-                  ))),
+                child: ClipRRect(
+                    borderRadius: BorderRadius.circular(45.0),
+                    child: Container(
+                        child: Stack(
+                      children: <Widget>[
+                        Image(
+                          width: 90,
+                          height: 90,
+                          image: AssetImage(radioArtistList[index].image),
+                          fit: BoxFit.cover,
+                        ),
+                        Container(
+                          width: 90,
+                          height: 90,
+                          color: radioArtistList[index].color.withOpacity(0.5),
+                        )
+                      ],
+                    ))),
               ),
               Expanded(
                 flex: 1,

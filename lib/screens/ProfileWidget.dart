@@ -10,7 +10,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   double space = 0;
 
-
   @override
   Widget build(BuildContext context) {
     space = MediaQuery.of(context).size.height/3;
@@ -24,7 +23,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 height: double.infinity,
                 width: double.infinity,
                 child: Container(
-                  height:space ,
+                  height: space,
                   color: Colors.white,
                   child: CustomPaint(
                     painter: CurvePainter(space),
@@ -35,16 +34,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
               alignment: Alignment.topCenter,
               padding: EdgeInsets.only(top: (space - 150)),
               child: Column(children: <Widget>[
-                
-                   ClipRRect(
-                    borderRadius: BorderRadius.circular(50.0),
-                    child: Image(
-                        image: AssetImage("assets/images/taal.jpg"),
-                        fit: BoxFit.cover,
-                        width: 100,
-                        height: 100),
-                  ),
-                
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(50.0),
+                  child: Image(
+                      image: AssetImage("assets/images/taal.jpg"),
+                      fit: BoxFit.cover,
+                      width: 100,
+                      height: 100),
+                ),
                 SizedBox(height: 15),
                 Text(
                   "Johnson J",
@@ -109,12 +106,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
 }
 
 class CurvePainter extends CustomPainter {
+  double mHeight = 0;
 
-  double mHeight  = 0;
-
- CurvePainter( double mHeight){
-     this.mHeight = mHeight;
- }
+  CurvePainter(double mHeight) {
+    this.mHeight = mHeight;
+  }
 
   @override
   void paint(Canvas canvas, Size size) {

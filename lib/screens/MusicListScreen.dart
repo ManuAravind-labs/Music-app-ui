@@ -11,6 +11,7 @@ class MusicListScreen extends StatefulWidget {
 
 class _MusicListScreenState extends State<MusicListScreen> {
   final List<String> categories = ["Romance", "Party", "Happy", "Events"];
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -93,11 +94,11 @@ class _MusicListScreenState extends State<MusicListScreen> {
     );
   }
 
-
-  Widget _buildSinger(){
-    return SingerListWidget(images: newReleaseList,
-      title: 'Artist',
-      imageHeight: 150.0,
-      imageWidth: 120.0);
+  Widget _buildSinger() {
+    return SingerListWidget(
+        images: newReleaseList,
+        title: 'Artist',
+        imageHeight: 150.0,
+        imageWidth: 120.0);
   }
 }
