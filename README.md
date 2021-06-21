@@ -6,7 +6,7 @@ Music App UI
 
 Inspired from https://www.behance.net/gallery/80566137/Music-App-UIUX?tracking_source=search-all%7Capp%20design
 <body style="background-color:powderblue;">
-<p align="center">
+<p  style='color:red' align="center">
 <img src ="screen/screen1.png"  width="234.3" height="482.4">
 <img src ="screen/screen2.png"  width="234.3" height="482.4">
 </p> 
